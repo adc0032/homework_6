@@ -4,8 +4,8 @@
 
 string_finder () {
 
-linenum=$(grep -i -n "$2" $1 |cut -d : -f 1|sed ':a;N;$!ba;s/\n/ /g')
-count=$(grep -i -c "$2" $1)
+linenum=$(grep -i -w -n "$2" $1 |cut -d : -f 1|sed ':a;N;$!ba;s/\n/ /g')
+count=$(grep -i -w -c "$2" $1)
 filename=$1
 
 echo -------------------------------------------------

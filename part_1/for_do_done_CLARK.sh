@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Enter Search Word for All Files" searchall
+read -p "Enter Search Word for All Files: " searchall
 
 touch $searchall.search.txt
 
